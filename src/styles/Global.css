@@ -1,0 +1,34 @@
+/* styles/global.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .user-profile {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .post-card {
+    background: white;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .comment-section {
+    margin-top: 10px;
+  }
+  
+  .search-bar {
+    margin: 20px;
+    text-align: center;
+  }
