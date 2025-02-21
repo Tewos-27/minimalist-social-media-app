@@ -10,7 +10,7 @@ export function UserProvider({ children }) {
     avatar: "https://via.placeholder.com/150",
     bio: "I love minimalist design!",
   });
-
+  
   return (
     <UserContext.Provider value={{ user, setUser }}>
       {children}
