@@ -4,12 +4,10 @@ import { useState } from "react";
 export default function CommentSection({ postId }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
-
   const handleAddComment = () => {
     setComments([...comments, newComment]);
     setNewComment("");
   };
-
   return (
     <div className="comment-section">
       <ul>
