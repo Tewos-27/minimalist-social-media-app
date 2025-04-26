@@ -1,6 +1,5 @@
 // components/CommentSection.jsx
 import { useState } from "react";
-
 export default function CommentSection({ postId }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
