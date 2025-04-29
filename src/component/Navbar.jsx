@@ -1,8 +1,23 @@
-import React from 'react'
-
+import React,{ useState } from 'react';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <>
+      <nav className="navbar">
+        <div className="navbar-brand">
+          <Link to="/">Social Media App</Link>
+        </div>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link to="/" className="nav-link">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/profile" className="nav-link">Profile</Link>
+          </li>
+          
+        </ul>
+      </nav>
+    </>
   )
 }
 
