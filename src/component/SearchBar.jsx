@@ -7,7 +7,6 @@ export default function SearchBar({ onSearch }) {
   const handleSearch = () => {
     onSearch(query);
   };
-
   return (
     <div className="search-bar">
       <input
