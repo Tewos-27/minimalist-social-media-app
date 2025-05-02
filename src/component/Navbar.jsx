@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
+
   return (
     <>
       <nav className="navbar">
@@ -20,7 +21,6 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/messages" className="nav-link">Messages</Link>
           </li>
-
           <button className="about-profile">About profile</button>
         </ul>
       </nav>
