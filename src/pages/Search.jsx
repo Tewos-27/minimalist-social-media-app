@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Search = () => {
   return (
     <>
@@ -8,5 +7,4 @@ const Search = () => {
     </>
   )
 }
-
 export default Search
