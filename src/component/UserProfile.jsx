@@ -1,4 +1,6 @@
 // components/UserProfile.jsx
+// This component displays a user's profile with their avatar, username, and bio.
+import React from 'react';
 export default function UserProfile({ user }) {
     return (
       <div className="user-profile">
