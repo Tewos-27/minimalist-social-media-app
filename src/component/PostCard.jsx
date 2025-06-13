@@ -1,4 +1,6 @@
 // components/PostCard.jsx
+// This component displays a single post with an image, caption, and actions like like and comment.
+import React from 'react';
 export default function PostCard({ post }) {
     return (
       // handle post card 
