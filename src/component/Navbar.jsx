@@ -6,6 +6,7 @@ const Navbar = () => {
     {/* mapinf the navbar list */}
       <nav className="navbar">
         <div className="navbar-brand">
+          
           <Link to="/">Social Media App</Link>
         </div>
         <ul className="navbar-nav">
