@@ -3,6 +3,7 @@
 import React from 'react';
 import './PostCard.css'; // Assuming you have a CSS file for styling
 import { Link } from 'react-router-dom';
+
 const [posts, setPosts] = React.useState([
   {
     id: 1,
@@ -15,6 +16,13 @@ const [posts, setPosts] = React.useState([
     caption: 'Another sample post',
   },
 ]);
+
+const handleLike = (postId) => {
+  // Logic to handle liking a post
+  console.log(`Liked post with id: ${postId}`);
+};
+
+
 export default function PostCard({ post }) {
     return (
       // handle post card 
