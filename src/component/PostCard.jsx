@@ -22,7 +22,10 @@ const handleLike = (postId) => {
   console.log(`Liked post with id: ${postId}`);
 };
 
-
+const handleComment = (postId) => {
+  // Logic to handle commenting on a post
+  console.log(`Commented on post with id: ${postId}`);
+};
 export default function PostCard({ post }) {
     return (
       // handle post card 
