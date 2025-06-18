@@ -17,6 +17,11 @@ const [posts, setPosts] = React.useState([
   },
 ]);
 
+const handleShare = (postId) => {
+  // Logic to handle sharing a post
+  console.log(`Shared post with id: ${postId}`);
+};
+
 const handleLike = (postId) => {
   // Logic to handle liking a post
   console.log(`Liked post with id: ${postId}`);
