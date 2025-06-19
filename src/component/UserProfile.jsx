@@ -19,8 +19,10 @@ export default function UserProfile({ user }) {
     return (
       <div className="user-profile">
         {/* about user detail */}
-        <img src={user.avatar} alt={`${user.username}'s avatar`} className="avatar" />
+
+        <img src={user.avatar} alt={`${user.username}'s avatar`} className="user-avatar" />
         <h2>{user.username}</h2>
+        <h2>{user.email}</h2>
         <p>{user.bio}</p>
       </div>
     );
