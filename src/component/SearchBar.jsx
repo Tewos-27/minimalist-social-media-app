@@ -7,7 +7,11 @@ const SearchBar = ({ onSearch }) => {
   const handleSearch = () => {
     onSearch(query);
   };
-}
+};
+
+// This component provides a search bar for users to search for posts or users.
+
+
 
 export default function SearchBar({ onSearch }) {
   const [query, setQuery] = useState("");
@@ -16,6 +20,8 @@ export default function SearchBar({ onSearch }) {
   };
   return (
     <div className="search-bar">
+      <label htmlFor="search">Search:</label>
+      
       <input
         type="text"
         value={query}
