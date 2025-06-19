@@ -20,6 +20,7 @@ const [posts, setPosts] = React.useState([
 const handleShare = (postId) => {
   // Logic to handle sharing a post
   console.log(`Shared post with id: ${postId}`);
+
 };
 
 const handleLike = (postId) => {
@@ -38,6 +39,7 @@ export default function PostCard({ post }) {
         <img src={post.image} alt={post.caption} className="post-image" />
         <p>{post.caption}</p>
         <div className="post-actions">
+          <button onClick={() => handleShare(post.id)}>Share</button>
           <button onClick={() => handleLike(post.id)}>Like</button>
           <button onClick={() => handleComment(post.id)}>Comment</button>
         </div>
