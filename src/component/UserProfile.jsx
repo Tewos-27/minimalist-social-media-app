@@ -27,6 +27,10 @@ export default function UserProfile({ user }) {
         <h2>{user.username}</h2>
         <h2>{user.email}</h2>
         <p>{user.bio}</p>
+        <p>Joined: {new Date(user.createdAt).toLocaleDateString()}</p>
+        <p>Last updated: {new Date(user.updatedAt).toLocaleDateString()}</p>
+
+        {/* Edit Profile Button */}
       </div>
     );
   }
