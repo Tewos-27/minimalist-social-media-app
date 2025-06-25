@@ -29,7 +29,13 @@ export default function UserProfile({ user }) {
         <p>{user.bio}</p>
         <p>Joined: {new Date(user.createdAt).toLocaleDateString()}</p>
         <p>Last updated: {new Date(user.updatedAt).toLocaleDateString()}</p>
+        <div className="user-stats">
+          <p>Posts: {user.posts.length}</p>
+          <p>Followers: {user.followers.length}</p>
+          <p>Following: {user.following.length}</p>
+        </div>
 
+        
         {/* Edit Profile Button */}
       </div>
     );
