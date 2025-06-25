@@ -4,6 +4,7 @@ import React from 'react';
 import './PostCard.css'; // Assuming you have a CSS file for styling
 import { Link } from 'react-router-dom';
 
+
 const [posts, setPosts] = React.useState([
   {
     id: 1,
@@ -32,6 +33,8 @@ const handleComment = (postId) => {
   console.log(`Commented on post with id: ${postId}`);
 };
 
+
+
 export default function PostCard({ post }) {
     return (
       // handle post card 
@@ -39,6 +42,7 @@ export default function PostCard({ post }) {
         <img src={post.image} alt={post.caption} className="post-image" />
         <p>{post.caption}</p>
         <div className="post-actions">
+
           <button onClick={() => handleShare(post.id)}>Share</button>
           <button onClick={() => handleLike(post.id)}>Like</button>
           <button onClick={() => handleComment(post.id)}>Comment</button>
