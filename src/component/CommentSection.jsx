@@ -18,6 +18,11 @@ export default function CommentSection({ postId }) {
       setNewComment("");
     }
   };
+  
+  const handleDeleteComment = (index) => {
+    const updatedComments = comments.filter((_, i) => i !== index);
+    setComments(updatedComments);
+  };
 
   return (
     <div className="comment-section">
@@ -34,6 +39,14 @@ export default function CommentSection({ postId }) {
         placeholder="Add a comment..."
       />
       <button onClick={handleAddComment}>send</button>
+      <div className="comment-list">
+        {comments.map((comment, index) => (
+          <div key={index} className="comment-item">
+            <span>{comment}</span>
+            <button onClick={() => handleDeleteComment(index)}>Delete</button>
+          </div>
+        ))}
+       </div>
     </div>
   );
 }
