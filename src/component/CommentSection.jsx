@@ -30,9 +30,10 @@ export default function CommentSection({ postId }) {
         type="text"
         value={newComment}
         onChange={(e) => setNewComment(e.target.value)}
+        onKeyPress={handleKeyPress}
         placeholder="Add a comment..."
       />
-      <button onClick={handleAddComment}>Post</button>
+      <button onClick={handleAddComment}>send</button>
     </div>
   );
 }
