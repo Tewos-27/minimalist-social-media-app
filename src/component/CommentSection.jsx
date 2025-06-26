@@ -5,14 +5,17 @@ export default function CommentSection({ postId }) {
   const [newComment, setNewComment] = useState("");
  
   // function to handle the comment
-  const handleAddComment = () => {
-    setComments([...comments, newComment]);
-    setNewComment("");
-  };
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter" && newComment.trim()) {
       handleAddComment();
+    }
+  };
+  
+  const handleAddComment = () => {
+    if (newComment.trim()) {
+      setComments([...comments, newComment]);
+      setNewComment("");
     }
   };
 
