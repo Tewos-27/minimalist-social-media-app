@@ -3,12 +3,19 @@ import { useState } from "react";
 export default function CommentSection({ postId }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
-  
+ 
   // function to handle the comment
   const handleAddComment = () => {
     setComments([...comments, newComment]);
     setNewComment("");
   };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter" && newComment.trim()) {
+      handleAddComment();
+    }
+  };
+
   return (
     <div className="comment-section">
       <ul>
