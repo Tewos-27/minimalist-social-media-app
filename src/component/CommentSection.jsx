@@ -25,10 +25,6 @@ export default function CommentSection({ postId }) {
   };
   
   // Render the comment section
-  // Display the comments and input field for new comments
-  // Add a button to send the comment
-
-
   return (
     <div className="comment-section">
       <ul>
@@ -72,6 +68,7 @@ export default function CommentSection({ postId }) {
             </div>
           ))}
         </div>
+        
     </div>
   );
 }
