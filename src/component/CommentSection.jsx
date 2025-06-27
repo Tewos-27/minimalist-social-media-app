@@ -64,6 +64,14 @@ export default function CommentSection({ postId }) {
         />
         <button onClick={handleAddComment}>Send</button>
        </div>
+        <div className="comment-list">
+          {comments.map((comment, index) => (
+            <div key={index} className="comment-item">
+              <span>{comment}</span>
+              <button onClick={() => handleDeleteComment(index)}>Delete</button>
+            </div>
+          ))}
+        </div>
     </div>
   );
 }
