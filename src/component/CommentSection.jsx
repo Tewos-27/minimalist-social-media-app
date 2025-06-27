@@ -23,6 +23,11 @@ export default function CommentSection({ postId }) {
     const updatedComments = comments.filter((_, i) => i !== index);
     setComments(updatedComments);
   };
+  
+  // Render the comment section
+  // Display the comments and input field for new comments
+  // Add a button to send the comment
+
 
   return (
     <div className="comment-section">
@@ -45,7 +50,19 @@ export default function CommentSection({ postId }) {
             <span>{comment}</span>
             <button onClick={() => handleDeleteComment(index)}>Delete</button>
           </div>
+          
         ))}
+       </div>
+
+       <div>
+        <input
+          type="text"
+          value={newComment}
+          onChange={(e) => setNewComment(e.target.value)}
+          onKeyPress={handleKeyPress}
+          placeholder="Add a comment..."
+        />
+        <button onClick={handleAddComment}>Send</button>
        </div>
     </div>
   );
