@@ -6,6 +6,15 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const closeMenu = () => {
+    setIsOpen(false);
+  }
+  // Function to handle the click event on the "About profile" button
+  const handleAboutProfileClick = () => {
+    // Logic to handle the click event, e.g., navigate to the about profile page
+    console.log("About profile button clicked");
+    // You can use a router or any other method to navigate to the about profile page
+  };
   return (
     <>
     {/* mapinf the navbar list */}
