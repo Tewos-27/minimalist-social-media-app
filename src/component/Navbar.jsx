@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleButtonClick = () => {
     handleAboutProfileClick();
   };
-  
+
   return (
     <>
     {/* mapinf the navbar list */}
@@ -41,7 +41,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/messages" className="nav-link">Messages</Link>
           </li>
-          <button className="about-profile">About profile</button>
+          <button onClick={handleAboutProfileClick} className="about-profile">About profile</button>
         </ul>
       </nav>
     </>
