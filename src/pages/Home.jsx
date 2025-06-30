@@ -11,7 +11,12 @@ const Home = () => {
   const handleButtonClick = () => {
     handleAboutProfileClick();
   }
-
+  
+  const handleContactClick = () => {
+    // Logic to handle the click event, e.g., navigate to the contact page
+    console.log("Contact button clicked");
+    // You can use a router or any other method to navigate to the contact page
+  }
   return (
     <>
     <h1>
