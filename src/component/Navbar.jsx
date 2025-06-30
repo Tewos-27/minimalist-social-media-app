@@ -5,10 +5,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+
   };
   const closeMenu = () => {
     setIsOpen(false);
   }
+
   // Function to handle the click event on the "About profile" button
   const handleAboutProfileClick = () => {
     // Logic to handle the click event, e.g., navigate to the about profile page
@@ -19,6 +21,7 @@ const Navbar = () => {
   const handleButtonClick = () => {
     handleAboutProfileClick();
   };
+  
 
   return (
     <>
