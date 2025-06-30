@@ -7,7 +7,11 @@ const Home = () => {
     console.log("About profile button clicked");
     // You can use a router or any other method to navigate to the about profile page
   }
-  
+  // Add the click event handler to the button
+  const handleButtonClick = () => {
+    handleAboutProfileClick();
+  }
+
   return (
     <>
     <h1>
