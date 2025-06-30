@@ -1,5 +1,13 @@
 import React from 'react'
 const Home = () => {
+  // This is the Home component that serves as the landing page of the application.
+
+  const handleAboutProfileClick = () => {
+    // Logic to handle the click event, e.g., navigate to the about profile page
+    console.log("About profile button clicked");
+    // You can use a router or any other method to navigate to the about profile page
+  }
+  
   return (
     <>
     <h1>
