@@ -83,6 +83,25 @@ export default function UserProfile({ user }) {
             <p>No posts available.</p>
           )}
           </div>
+        {/* Display Followers and Following */}
+        <div className="user-followers-following">
+          <h3>Followers</h3>
+          {user.followers.length > 0 ? (
+            user.followers.map((follower, index) => (
+              <p key={index}>{follower.username}</p>
+            ))
+          ) : (
+            <p>No followers yet.</p>
+          )}
+          <h3>Following</h3>
+          {user.following.length > 0 ? (
+            user.following.map((followedUser, index) => (
+              <p key={index}>{followedUser.username}</p>
+            ))
+          ) : (
+            <p>Not following anyone.</p>
+          )}
+          </div>
       </div>
     );
   }
