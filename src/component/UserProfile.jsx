@@ -69,6 +69,20 @@ export default function UserProfile({ user }) {
             <button type="submit" className="save-profile-button">Save</button>
           </form>
         )}
+        {/* Display User Posts */}
+        <div className="user-posts">
+          <h3>Posts</h3>
+          {user.posts.length > 0 ? (
+            user.posts.map((post, index) => (
+              <div key={index} className="user-post">
+                <p>{post.content}</p>
+                <p>Posted on: {new Date(post.createdAt).toLocaleDateString()}</p>
+              </div>
+            ))
+          ) : (
+            <p>No posts available.</p>
+          )}
+          </div>
       </div>
     );
   }
