@@ -37,6 +37,9 @@ export default function UserProfile({ user }) {
 
         
         {/* Edit Profile Button */}
+        <button onClick={() => setIsEditing(!isEditing)} className="edit-profile-button">
+          {isEditing ? 'Cancel' : 'Edit Profile'}
+        </button>
       </div>
     );
   }
