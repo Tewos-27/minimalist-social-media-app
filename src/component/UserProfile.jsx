@@ -13,11 +13,8 @@ const [user, setUser] = useState({
   following: [],
   createdAt: new Date(),
   updatedAt: new Date(),
-
 });
-
 const [isEditing, setIsEditing] = useState(false);
-
 export default function UserProfile({ user }) {
     return (
       <div className="user-profile">
