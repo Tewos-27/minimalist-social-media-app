@@ -40,6 +40,35 @@ export default function UserProfile({ user }) {
         <button onClick={() => setIsEditing(!isEditing)} className="edit-profile-button">
           {isEditing ? 'Cancel' : 'Edit Profile'}
         </button>
+        {/* Edit Profile Form */}
+        {isEditing && (
+          <form className="edit-profile-form">
+            <label>
+              Username:
+              <input
+                type="text"
+                value={user.username}
+                onChange={(e) => setUser({ ...user, username: e.target.value })}
+              />
+            </label>
+            <label>
+              Email:
+              <input
+                type="email"
+                value={user.email}
+                onChange={(e) => setUser({ ...user, email: e.target.value })}
+              />
+            </label>
+            <label>
+              Bio:
+              <textarea
+                value={user.bio}
+                onChange={(e) => setUser({ ...user, bio: e.target.value })}
+              />
+            </label>
+            <button type="submit" className="save-profile-button">Save</button>
+          </form>
+        )}
       </div>
     );
   }
