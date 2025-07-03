@@ -1,5 +1,7 @@
 import React from 'react'
 const Search = () => {
+  const [searchTerm, setSearchTerm] = React.useState("");
+  
   return (
     <>
       <h2>search bar</h2>
