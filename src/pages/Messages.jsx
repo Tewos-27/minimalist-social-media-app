@@ -10,7 +10,7 @@ const handleMessage = (event) => {
     setNewMessage("");
   }
   console.log("Message sent:", newMessage);
-  
+
 };
 const Messages = () => {
   return (
@@ -29,12 +29,7 @@ const Messages = () => {
           placeholder="Type your message here..."
           className="message-textarea"
         />
-        <button onClick={() => {
-          if (newMessage.trim()) {
-            setMessages([...messages, newMessage]);
-            setNewMessage("");
-          }
-        }} className="send-message-button">Send</button>
+        <button onClick={handleMessage} className="send-button">Send</button>
       </div>
     </>
   )
