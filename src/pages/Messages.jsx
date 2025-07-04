@@ -3,14 +3,21 @@ import {useState} from 'react';
 
 const [messages, setMessages] = useState([]);
 const [newMessage, setNewMessage] = useState("");
-
+const handleMessage = (event) => {
+  event.preventDefault();
+  if (newMessage.trim()) {
+    setMessages([...messages, newMessage]);
+    setNewMessage("");
+  }
+  console.log("Message sent:", newMessage);
+  
+};
 const Messages = () => {
   return (
     <>
       <h2>Messages</h2>
       <p>This is the messages page where you can view and send messages to your friends.</p>
       <div className="messages-list">
-        {/* Placeholder for messages */}
         <p>No messages yet. Start a conversation!</p>
       </div>
       <input type="text" placeholder="Type your message here..." className="message-input" />
