@@ -17,7 +17,6 @@ const Search = () => {
         onChange={handleSearchChanges}
         className="search-input"
       />
-      
     </>
   )
 }
