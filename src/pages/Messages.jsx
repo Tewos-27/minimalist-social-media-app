@@ -12,6 +12,12 @@ const handleMessage = (event) => {
   console.log("Message sent:", newMessage);
 
 };
+const handleDelete = (index) => {
+  const updatedMessages = messages.filter((_, i) => i !== index);
+  setMessages(updatedMessages);
+  console.log("Message deleted:", index);
+};
+
 const Messages = () => {
   return (
     <>
@@ -31,6 +37,7 @@ const Messages = () => {
         />
         <button onClick={handleMessage} className="send-button">Send</button>
       </div>
+      
     </>
   )
 }
